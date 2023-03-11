@@ -140,7 +140,7 @@ public class CSVCommonsLoader {
             break;
         case SUPPLIED_BY_USER:
             // a populated string array supplied by the user
-            format = format.withHeader(columns.toArray(new String[columns.size()]));
+            format = format.withHeader(columns.toArray(new String[0]));
             break;
         default:
             throw new RuntimeException("Header source was unable to be inferred.");
